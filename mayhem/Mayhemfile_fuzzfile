@@ -1,0 +1,7 @@
+project: libcups
+target: fuzzfile
+testsuite:
+  - file:///mayhem/mayhem/testsuite/fuzzfile
+cmds:
+  - cmd: /mayhem/fuzzfile
+    libfuzzer: true

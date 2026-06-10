@@ -1,0 +1,60 @@
+# IPP wire-format dictionary for the libcups fuzzipp harness.
+# The harness feeds raw bytes to ippReadIO(); these tokens are common IPP
+# value tags and attribute names that steer the parser through real branches.
+
+# --- IPP version + operation-id prefixes (major.minor + op) ---
+"\x01\x01"
+"\x02\x00"
+"\x01\x00\x00\x02"
+"\x01\x01\x00\x0b"
+
+# --- delimiter / group tags ---
+"\x01"
+"\x02"
+"\x03"
+"\x04"
+"\x05"
+
+# --- value tags ---
+"\x10"
+"\x13"
+"\x21"
+"\x22"
+"\x23"
+"\x30"
+"\x33"
+"\x34"
+"\x35"
+"\x36"
+"\x37"
+"\x41"
+"\x42"
+"\x44"
+"\x45"
+"\x46"
+"\x47"
+"\x48"
+
+# --- common attribute names ---
+"attributes-charset"
+"attributes-natural-language"
+"printer-uri"
+"job-id"
+"job-uri"
+"requesting-user-name"
+"job-name"
+"document-format"
+"ipp-attribute-fidelity"
+"printer-state"
+"printer-state-reasons"
+"operations-supported"
+"media"
+"media-col"
+"copies"
+"sides"
+"orientation-requested"
+"print-quality"
+"notify-lease-duration-supported"
+"utf-8"
+"en"
+"ipp://localhost/printers/"
